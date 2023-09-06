@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96304E3B2AA75A6400FDFEFA /* ApexPredator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96304E3A2AA75A6400FDFEFA /* ApexPredator.swift */; };
+		96304E3E2AA75BE600FDFEFA /* PredatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96304E3D2AA75BE600FDFEFA /* PredatorController.swift */; };
+		96304E402AA78CFC00FDFEFA /* PredatorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96304E3F2AA78CFC00FDFEFA /* PredatorRow.swift */; };
+		96304E422AA7B87500FDFEFA /* PredatorDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96304E412AA7B87500FDFEFA /* PredatorDetail.swift */; };
 		969501BD2AA7578800F8BAF7 /* JP_Apex_PredatorsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969501BC2AA7578800F8BAF7 /* JP_Apex_PredatorsApp.swift */; };
 		969501BF2AA7578800F8BAF7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969501BE2AA7578800F8BAF7 /* ContentView.swift */; };
 		969501C12AA7579300F8BAF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 969501C02AA7579300F8BAF7 /* Assets.xcassets */; };
 		969501C42AA7579300F8BAF7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 969501C32AA7579300F8BAF7 /* Preview Assets.xcassets */; };
+		969501CB2AA7584700F8BAF7 /* jpapexpredators.json in Resources */ = {isa = PBXBuildFile; fileRef = 969501CA2AA7584700F8BAF7 /* jpapexpredators.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		96304E3A2AA75A6400FDFEFA /* ApexPredator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApexPredator.swift; sourceTree = "<group>"; };
+		96304E3D2AA75BE600FDFEFA /* PredatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredatorController.swift; sourceTree = "<group>"; };
+		96304E3F2AA78CFC00FDFEFA /* PredatorRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredatorRow.swift; sourceTree = "<group>"; };
+		96304E412AA7B87500FDFEFA /* PredatorDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredatorDetail.swift; sourceTree = "<group>"; };
 		969501B92AA7578800F8BAF7 /* JP Apex Predators.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JP Apex Predators.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		969501BC2AA7578800F8BAF7 /* JP_Apex_PredatorsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JP_Apex_PredatorsApp.swift; sourceTree = "<group>"; };
 		969501BE2AA7578800F8BAF7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		969501C02AA7579300F8BAF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		969501C32AA7579300F8BAF7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		969501CA2AA7584700F8BAF7 /* jpapexpredators.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jpapexpredators.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +42,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		96304E382AA75A3800FDFEFA /* models */ = {
+			isa = PBXGroup;
+			children = (
+				96304E3A2AA75A6400FDFEFA /* ApexPredator.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		96304E392AA75A4800FDFEFA /* views */ = {
+			isa = PBXGroup;
+			children = (
+				969501BE2AA7578800F8BAF7 /* ContentView.swift */,
+				96304E3F2AA78CFC00FDFEFA /* PredatorRow.swift */,
+				96304E412AA7B87500FDFEFA /* PredatorDetail.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		96304E3C2AA75BA100FDFEFA /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				96304E3D2AA75BE600FDFEFA /* PredatorController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
 		969501B02AA7578800F8BAF7 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +87,11 @@
 		969501BB2AA7578800F8BAF7 /* JP Apex Predators */ = {
 			isa = PBXGroup;
 			children = (
+				96304E3C2AA75BA100FDFEFA /* controllers */,
+				96304E382AA75A3800FDFEFA /* models */,
+				969501CA2AA7584700F8BAF7 /* jpapexpredators.json */,
 				969501BC2AA7578800F8BAF7 /* JP_Apex_PredatorsApp.swift */,
-				969501BE2AA7578800F8BAF7 /* ContentView.swift */,
+				96304E392AA75A4800FDFEFA /* views */,
 				969501C02AA7579300F8BAF7 /* Assets.xcassets */,
 				969501C22AA7579300F8BAF7 /* Preview Content */,
 			);
@@ -127,6 +166,7 @@
 			files = (
 				969501C42AA7579300F8BAF7 /* Preview Assets.xcassets in Resources */,
 				969501C12AA7579300F8BAF7 /* Assets.xcassets in Resources */,
+				969501CB2AA7584700F8BAF7 /* jpapexpredators.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +177,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96304E3E2AA75BE600FDFEFA /* PredatorController.swift in Sources */,
+				96304E3B2AA75A6400FDFEFA /* ApexPredator.swift in Sources */,
 				969501BF2AA7578800F8BAF7 /* ContentView.swift in Sources */,
+				96304E422AA7B87500FDFEFA /* PredatorDetail.swift in Sources */,
 				969501BD2AA7578800F8BAF7 /* JP_Apex_PredatorsApp.swift in Sources */,
+				96304E402AA78CFC00FDFEFA /* PredatorRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +319,7 @@
 				DEVELOPMENT_TEAM = 64GU32RAV4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "JP Predators";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +349,7 @@
 				DEVELOPMENT_TEAM = 64GU32RAV4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "JP Predators";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
