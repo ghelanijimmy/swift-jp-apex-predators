@@ -7,6 +7,12 @@
 
 import SwiftUI
 
+extension View {
+    func hideKeyboard() {
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+}
+
 struct ContentView: View {
     
     let apController = PredatorController()
@@ -87,6 +93,9 @@ struct ContentView: View {
                     TextField("Search", text: $searchFilter)
                 }
             })
+        }
+        .onTapGesture {
+            self.hideKeyboard()
         }
     }
 }
